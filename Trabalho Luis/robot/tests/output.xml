@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-11-18T21:07:14.963461" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\compuni.UNIFIL\Desktop\Trabalho Luis\robot\tests">
+<suite id="s1-s1" name="Login Tests" source="C:\Users\compuni.UNIFIL\Desktop\Trabalho Luis\robot\tests\login_tests.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-11-18T21:07:15.250141" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>https://www.saucedemo.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-18T21:07:15.249260" elapsed="2.216097"/>
+</kw>
+<test id="s1-s1-t1" name="Cenario A - Login Bem Sucedido" line="8">
+<kw name="Login Com Credenciais">
+<msg time="2025-11-18T21:07:17.468552" level="FAIL">No keyword with name 'Login Com Credenciais' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</msg>
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<status status="FAIL" start="2025-11-18T21:07:17.468473" elapsed="0.000134">No keyword with name 'Login Com Credenciais' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Location Should Contain" owner="SeleniumLibrary">
+<arg>/inventory.html</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<status status="NOT RUN" start="2025-11-18T21:07:17.468916" elapsed="0.000034"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<arg>css:.inventory_item</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" start="2025-11-18T21:07:17.469137" elapsed="0.000024"/>
+</kw>
+<doc>Login com standard_user e validações</doc>
+<status status="FAIL" start="2025-11-18T21:07:17.466422" elapsed="0.002985">No keyword with name 'Login Com Credenciais' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-s1-t2" name="Cenario B - Login Invalido" line="14">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-18T21:07:17.471332" level="INFO">Typing text 'fake_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>fake_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-18T21:07:17.470876" elapsed="0.081125"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-18T21:07:17.552510" level="INFO">Typing text 'some_password' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>some_password</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-18T21:07:17.552301" elapsed="0.069484"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-18T21:07:17.622297" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-18T21:07:17.622107" elapsed="0.060090"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-11-18T21:07:17.691218" level="INFO">Current page contains element 'css:.error-message-container'.</msg>
+<arg>css:.error-message-container</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-11-18T21:07:17.682634" elapsed="0.008698"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-11-18T21:07:17.695848" level="INFO">Current location is 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-11-18T21:07:17.691693" elapsed="0.004242"/>
+</kw>
+<doc>Usuario inválido deve exibir erro e permanecer no login</doc>
+<status status="PASS" start="2025-11-18T21:07:17.470242" elapsed="0.225960"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-18T21:07:17.696954" elapsed="2.098466"/>
+</kw>
+<status status="FAIL" start="2025-11-18T21:07:14.994887" elapsed="4.800737"/>
+</suite>
+<suite id="s1-s2" name="Purchase Tests" source="C:\Users\compuni.UNIFIL\Desktop\Trabalho Luis\robot\tests\purchase_tests.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-11-18T21:07:19.800101" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>https://www.saucedemo.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-18T21:07:19.799934" elapsed="1.537691"/>
+</kw>
+<test id="s1-s2-t1" name="Cenario C - Fluxo de Compra Curto" line="8">
+<kw name="Login Com Credenciais">
+<msg time="2025-11-18T21:07:21.339617" level="FAIL">No keyword with name 'Login Com Credenciais' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</msg>
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<status status="FAIL" start="2025-11-18T21:07:21.339575" elapsed="0.000083">No keyword with name 'Login Com Credenciais' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.inventory_list</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-11-18T21:07:21.339882" elapsed="0.000029"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id:add-to-cart-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-11-18T21:07:21.340070" elapsed="0.000026"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>css:.shopping_cart_link</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-11-18T21:07:21.340251" elapsed="0.000026"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Sauce Labs Backpack</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-11-18T21:07:21.340484" elapsed="0.000040"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id:checkout</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-11-18T21:07:21.340700" elapsed="0.000026"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:first-name</arg>
+<arg>Test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-11-18T21:07:21.340874" elapsed="0.000024"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:last-name</arg>
+<arg>User</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-11-18T21:07:21.341034" elapsed="0.000024"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:postal-code</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-11-18T21:07:21.341195" elapsed="0.000023"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id:continue</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-11-18T21:07:21.341475" elapsed="0.000023"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Overview</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-11-18T21:07:21.341635" elapsed="0.000024"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id:finish</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-11-18T21:07:21.341790" elapsed="0.000024"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>THANK YOU FOR YOUR ORDER</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-11-18T21:07:21.342080" elapsed="0.000026"/>
+</kw>
+<doc>Compra curta: add to cart, checkout, finalizar</doc>
+<status status="FAIL" start="2025-11-18T21:07:21.337747" elapsed="0.004576">No keyword with name 'Login Com Credenciais' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-18T21:07:21.342968" elapsed="2.076555"/>
+</kw>
+<status status="FAIL" start="2025-11-18T21:07:19.796774" elapsed="3.622853"/>
+</suite>
+<status status="FAIL" start="2025-11-18T21:07:14.964909" elapsed="8.455873"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="2" skip="0">Tests</stat>
+<stat name="Login Tests" id="s1-s1" pass="1" fail="1" skip="0">Tests.Login Tests</stat>
+<stat name="Purchase Tests" id="s1-s2" pass="0" fail="1" skip="0">Tests.Purchase Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-11-18T21:07:15.247240" level="ERROR">Error in file 'C:\Users\compuni.UNIFIL\Desktop\Trabalho Luis\robot\tests\login_tests.robot' on line 5: Resource file '..\resources\keywords.robot' does not exist.</msg>
+<msg time="2025-11-18T21:07:19.798966" level="ERROR">Error in file 'C:\Users\compuni.UNIFIL\Desktop\Trabalho Luis\robot\tests\purchase_tests.robot' on line 5: Resource file '..\resources\keywords.robot' does not exist.</msg>
+</errors>
+</robot>
